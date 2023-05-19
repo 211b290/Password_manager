@@ -37,10 +37,15 @@ public class EnterPasswordActivity extends AppCompatActivity {
 
                 if(text.equals(password)){
                     //enter the app
+
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+
                     startActivity(intent);
+
                     finish();
-                } else {
+                }
+
+                else {
                     Toast.makeText(EnterPasswordActivity.this, "Wrong password", Toast.LENGTH_SHORT).show();
                 }
 
